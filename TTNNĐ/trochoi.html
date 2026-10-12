@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chơi lật thẻ | Khám phá Huế</title>
+
+    <link rel="stylesheet" href="trochoi.css">
+    <script src="trochoi.js" defer></script>
+</head>
+
+<body background="images/anhnnen.jpg" style="background-size: cover;">
+    <header class="site-header">
+        <a href="../intro.html" class="logo">✦ Khám phá Huế</a>
+
+        <nav>
+            <a href="../intro.html">Trang chủ</a>
+            <a href="../index.html">Bản đồ tương tác</a>
+            <a href="trochoi.html" class="act">Trò chơi</a>
+            <a href="#">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <main class="game-container" id="game">
+        <div class="ornament"></div>
+
+        <h1>Trò chơi lật thẻ</h1>
+
+        <p class="description">
+            Hãy tìm và ghép đúng các cặp thẻ:
+            một thẻ tên và một thẻ hình ảnh của cùng một di tích Huế.
+        </p>
+
+        <section class="game-info">
+            <div class="info-box">
+                <span>⌛ Thời gian</span>
+                <strong id="timer">00:00</strong>
+            </div>
+
+            <div class="info-box">
+                <span>✦ Số cặp đã tìm</span>
+                <strong id="score">0 / 4</strong>
+            </div>
+        </section>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <p id="gameMessage" aria-live="polite">
+            Hãy bắt đầu hành trình khám phá!
+        </p>
+
+        <button id="restartButton" type="button">
+            ↻ Chơi lại
+        </button>
+
+        <div class="ornament bottom-ornament"></div>
+    </main>
+
+    <footer>
+        <p>Khám phá di sản văn hóa cố đô Huế</p>
+    </footer>
+</body>
+</html>
